@@ -43,7 +43,7 @@ gem 'bulma-rails', '~> 0.9.4'
 gem 'simple_form', '~> 5.1'
 
 # HTTParty to make API calls
-gem 'httparty', '~> 0.13.7' 
+gem 'httparty', '~> 0.20.0'
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"

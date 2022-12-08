@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   resources :posts do 
     resources :comments
   end
-  root "posts#index" # this is setting the homeoage '/' to 'posts'
+  root "posts#index" # this is setting the homeoage '/' to 'posts' with "index" action
 
 end
