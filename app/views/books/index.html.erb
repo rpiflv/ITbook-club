@@ -1,0 +1,20 @@
+<% content_for :page_title, "Books Index" %>
+
+<section class="section">
+<div class="container">
+<% @books.list_new['books'].each do |book| %>
+    <div class="card">
+        <div class="class-content">
+            <div class="media">
+                <div class="media-content">
+                    <p class="title is-4"><%= book['title'] %></p>
+                </div>
+            </div>
+            <div class="content">
+                <%= book['subtitle'] %>
+            </div>
+    <br/>
+        </div>
+        <% end %>
+</div>
+</section>
