@@ -35,14 +35,15 @@ gem "jbuilder"
 
 
 # CUSTOM ADD
-# makes error better looking
-gem 'better_errors', '~> 2.9', '>= 2.9.1'
 
 # Bulma CSS
 gem 'bulma-rails', '~> 0.9.4'
 
 # Simple form
 gem 'simple_form', '~> 5.1'
+
+# HTTParty to make API calls
+gem 'httparty', '~> 0.13.7' 
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
