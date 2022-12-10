@@ -1,5 +1,3 @@
-require 'httparty'
-
 class Books
     include HTTParty
     base_uri 'https://api.itbook.store/1.0/'
@@ -15,6 +13,3 @@ class Books
         end
     end
 end
-
-# books = Books.new
-# puts books.list_new

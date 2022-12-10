@@ -40,14 +40,18 @@ class PostsController < ApplicationController
     def destroy
 		# @post = Post.find(params[:id])
 		@post.destroy
-
 		redirect_to posts_path
-
 	end
 
-
+    
+    
     private 
-
+    
+    # def get_img
+    #     @options = @post.post_isbn
+    #     self.class.get('/books/:isbn13', @options)
+    # end
+    
     def post_params
         params.require(:post).permit(:title, :content, :isbn) 
     end
@@ -57,3 +61,6 @@ class PostsController < ApplicationController
     end
 
 end
+
+    # post = Post.new()
+    # puts post

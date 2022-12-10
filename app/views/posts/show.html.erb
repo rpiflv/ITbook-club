@@ -33,10 +33,12 @@
         <h2 class="subtitle is-5">
         <strong><%= @post.comments.count %> Comments</strong></h2>
     </div>
-    <%= render @post.comments%>
+   <% if user_signed_in? %>
+    <%= render @post.comments %>
     <div class="comment-form">
     <hr/>
     <h3 class="subtitle is-3">Leave a comment</h3>
     <%= render 'comments/form' %>
     </div>
+<% end %>
 </section>

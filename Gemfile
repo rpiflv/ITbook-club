@@ -36,6 +36,9 @@ gem "jbuilder"
 
 # CUSTOM ADD
 
+# Authentication
+gem 'devise', '~> 4.8', '>= 4.8.1'
+
 # Bulma CSS
 gem 'bulma-rails', '~> 0.9.4'
 

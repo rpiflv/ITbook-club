@@ -1,9 +1,9 @@
-<% content_for :page_title, "Books Index" %>
+<% content_for :page_title, "IT-Books Index" %>
 
 <section class="section">
 <div class="container">
 <% @books.list_new['books'].each do |book| %>
-    <div class="card">
+    <div class="card mb-4">
         <div class="class-content">
             <div class="media">
                 <div class="media-content">
@@ -16,7 +16,9 @@
             <div class="content">
                 <%= book['isbn13'] %>
             </div>
-    <br/>
+            <% if user_signed_in? %>
+                <%= link_to "Create a post!", new_post_path, class:"button" %>
+            <% end %>
         </div>
         <% end %>
 </div>
